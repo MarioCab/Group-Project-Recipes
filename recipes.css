@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+}
+
+header, nav, main, footer {
+	display: block;
+}
+
+body {
+	color: #D2B48C;
+	font-family: Verdana, Arial, sans-serif;
+	background-image: url(images/background.gif);
+	font-size: 1.2em;
+}
+
+header {
+	background-color: #221811;
+	height: 150px;
+	background-image: url(images/javajamlogo.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+h1 {
+	padding-top: 45px;
+	padding-left: 50px;
+	font-size: 3em;
+}
+
+.recipe {
+	font-size: 1.5em;
+}
+
+#recipelist a:link {
+	color: #FEF6C2;
+}
+
+#recipelist a:visited {
+	color: #D2B48C;
+}
+
+#recipelist a:hover {
+	color: #CC9933;
+}
+
+#recipelist ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+main {
+	padding: 0 0 2em 0;
+	margin-left: 50px;
+	display: block;
+}
+
+#wrapper {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #231814;
+	min-width: 900px;
+	max-width: 1280px;
+	box-shadow: 3px 3px 3px #666666;
+}
+
+#mobile {
+	display: none;
+}
+
+#desktop {
+	display: inline;
+}
+
+@media only screen and (max-width: 1024px) {
+	body {
+		margin: 0;
+		background-image: none;
+	}
+	#wrapper {
+		width: auto;
+		min-width: 0;
+		margin: 0;
+		padding: 0;
+		box-shadow: none;
+	}
+	header {
+		border-bottom: 5px solid #F3F6C2;
+	}
+	h1 {
+		margin-top: 0;
+		margin-bottom: 1em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		font-size: 2.5em;
+	}
+	main {
+		font-size: 90%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	header {
+		background-image: none;
+		height: 128px;
+	}
+	h1 {
+		font-size: 2em;
+		text-align: center;
+		padding-left: 0;
+	}
+	#recipes {
+		margin: 0;
+	}
+	main {
+		padding-top: 1px;
+	}
+	#mobile {
+		display: inline;
+	}
+	#desktop {
+		display: none;
+	}
+}
